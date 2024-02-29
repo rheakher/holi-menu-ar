@@ -11,8 +11,13 @@
 <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
 <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
+    <a-assets>
+        <img id="chana-image" src="chana.png">
+    </a-assets>
+
     <a-marker type='barcode' value='6'>
-        <a-box position='0 0.5 0' color="yellow"></a-box>
+        <a-image src="#chana-image"></a-image>
+<!--        <a-box position='0 0.5 0' color="yellow"></a-box>-->
     </a-marker>
 
     <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
