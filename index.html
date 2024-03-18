@@ -12,15 +12,63 @@
 <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
     <a-assets>
-        <img id="chana-image" src="chana.png">
+        <img id="bhindi" src="assets/bhindi.png">
+        <img id="bombay-sandwich" src="assets/bombay-sandwich.png">
+        <img id="bombay-sandwich-df" src="assets/bombay-sandwich-df.png">
+        <img id="chana" src="assets/chana.png">
+        <img id="chana-df" src="assets/chana-df.png">
+        <img id="chicken-tikka" src="assets/chicken-tikka.png">
+        <img id="malai-kebab" src="assets/malai-kebab.png">
+        <img id="masala-idli" src="assets/masala-idli.png">
+        <img id="og-idli" src="assets/og-idli.png">
+        <img id="rose-thandai" src="assets/rose-thandai.png">
+        <img id="thandai" src="assets/thandai.png">
     </a-assets>
 
-    <a-marker type='barcode' value='6'>
-        <a-image src="#chana-image" position='0 0 0' rotation="90 0 0" scale='4 -3 -3'></a-image>
-<!--        <a-box position='0 0.5 0' color="yellow"></a-box>-->
+    <a-marker type='barcode' value='1'>
+        <a-image src="#bhindi" position='0 0 0' rotation="90 0 0" scale='4 -3 -3'></a-image>
     </a-marker>
 
-    <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
+    <a-marker type='barcode' value='2'>
+        <a-image src="#bombay-sandwich" position='0 0 0' rotation="90 0 0" scale='4 -3 -3'></a-image>
+    </a-marker>
+
+    <a-marker type='barcode' value='3'>
+        <a-image src="#bombay-sandwich-df" position='0 0 0' rotation="90 0 0" scale='4 -3 -3'></a-image>
+    </a-marker>
+
+    <a-marker type='barcode' value='4'>
+        <a-image src="#chana" position='0 0 0' rotation="90 0 0" scale='4 -3 -3'></a-image>
+    </a-marker>
+
+    <a-marker type='barcode' value='5'>
+        <a-image src="#chana-df" position='0 0 0' rotation="90 0 0" scale='4 -3 -3'></a-image>
+    </a-marker>
+
+    <a-marker type='barcode' value='6'>
+        <a-image src="#chicken-tikka" position='0 0 0' rotation="90 0 0" scale='4 -3 -3'></a-image>
+    </a-marker>
+
+    <a-marker type='barcode' value='7'>
+        <a-image src="#malai-kebab" position='0 0 0' rotation="90 0 0" scale='4 -3 -3'></a-image>
+    </a-marker>
+
+    <a-marker type='barcode' value='8'>
+        <a-image src="#masala-idli" position='0 0 0' rotation="90 0 0" scale='4 -3 -3'></a-image>
+    </a-marker>
+
+    <a-marker type='barcode' value='9'>
+        <a-image src="#og-idli" position='0 0 0' rotation="90 0 0" scale='4 -3 -3'></a-image>
+    </a-marker>
+
+    <a-marker type='barcode' value='10'>
+        <a-image src="#rose-thandai" position='0 0 0' rotation="90 0 0" scale='4 -3 -3'></a-image>
+    </a-marker>
+
+    <a-marker type='barcode' value='11'>
+        <a-image src="#thandai" position='0 0 0' rotation="90 0 0" scale='4 -3 -3'></a-image>
+    </a-marker>
+
     <a-entity camera></a-entity>
 </a-scene>
 </body>
